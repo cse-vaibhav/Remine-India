@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import "./scss/body.scss";
-import features from "/public/data/features.json";
-import poster from "/public/assets/home.png";
+import features from "./data/features.json";
+import poster from "./assets/home.png";
 
 function Feature({ obj }) {
 
