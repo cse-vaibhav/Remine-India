@@ -1,0 +1,129 @@
+/* Add a class to the body element to enable the transition */
+@import "./colors.scss";
+@import "./widgets/button.scss";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#body {
+  background-color: $primary;
+  color: $secondary;
+  height: 100vh;
+  padding-top: 3px;
+}
+
+main {
+  flex-flow: column;
+  height: 100%;
+}
+
+/* Style the hero section */
+#hero {
+  @include flex-center;
+  text-align: center;
+  gap: 64px;
+  padding: 10%;
+  background-color: $primary;
+  height: 100vh;
+
+  img {
+    width: 600px;
+    height: 600px;
+  }
+
+}
+#hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Style the features section */
+#features {
+  @include flex-center;
+  flex-flow: column;
+  background-color: darken($primary, 5%);
+  padding-top: 50px;
+  text-align: center;
+  overflow-x: scroll;
+  height: 100vh;
+}
+#features h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+#features ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#features li {
+  margin: 0 20px;
+  font-size: 20px;
+}
+
+.feature {
+  @include flex-center;
+  flex-flow: column;
+  flex: 1;
+  gap: 16px;
+
+  padding: 12% 7%;
+  background-color: $primary;
+  border-radius: 8px;
+  height: 530px;
+  width: 500px;
+  border: 1px $secondary solid;
+  box-shadow: 5px 4px;
+  transition: box-shadow ease 400ms;
+
+  &:hover {
+    box-shadow: 2px 2px inset;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  img {
+    width: 170px;
+    height: 170px;
+  }
+
+}
+
+/* Style the Onboarding section */
+#onboarding {
+  @include flex-center;
+  background-color: darken($primary, 5%);
+  color: $secondary;
+  text-align: center;
+  gap: 64px;
+  padding-bottom: 30px;
+  height: 100vh;
+
+  h1 {
+    font-size: 25pt;
+  }
+
+  form {
+    @include flex-center;
+    flex-flow: column;
+    background-color: darken($primary, 10%);
+    gap: 8px;
+    padding: 3%;
+  }
+
+  input {
+    padding: 12px;
+    font-weight: 400;
+    font-size: 11pt;
+  }
+}

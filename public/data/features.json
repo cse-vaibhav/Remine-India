@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Responsible Recyclling",
+        "image": "/public/assets/recycle.png",
+        "description": "At Remona, we are committed to responsible recycling and work with certified recyclers to ensure safe disposal of e-waste. Join us in our efforts to protect our environment by recycling your e-waste responsibly. Let's work together for a sustainable future."
+    }, 
+    {
+        "title": "Disposal of Lithium-ion batteries",
+        "image": "/public/assets/lithium.png",
+        "description": "At Remona, we encourage proper disposal and offer convenient drop-off locations. We work with certified recyclers to ensure that the batteries are disposed of safely. Let's work together to promote responsible disposal of lithium-ion batteries and protect our environment."
+    },
+    {
+        "title": "Customer Education",
+        "image": "/public/assets/customer-education.png",
+        "description": "At Remona, we value customer education and offer resources such as instructional videos, product guides, and FAQs. Our goal is to empower informed decision-making and continuous improvement of our educational resources. By investing in customer education, we invest in our customers' satisfaction and loyalty. "
+    }
+]

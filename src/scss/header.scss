@@ -1,0 +1,69 @@
+@import "./colors.scss";
+@import "./widgets/button.scss";
+
+header {
+    position: fixed;
+    width: 100vw;
+
+    nav {
+        background-color: darken($primary, 10%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: 14pt;
+    }
+
+    #brand {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-weight: 700;
+        font-size: 17pt;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: $secondary;
+    }
+
+    #logo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    // LINKS
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        .active {
+            background-color: $tertiary;
+            color: $primary;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 15pt;
+        }
+
+
+        li {
+            color: $secondary;
+            font-weight: 600;
+
+            a {
+                text-decoration: none;
+
+                &:visited {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    #user-login {
+        background: inherit;
+        display: flex;
+        gap: 8px;
+    }
+
+}
